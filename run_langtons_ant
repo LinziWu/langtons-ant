@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ -f ./dist/build/LangtonsAnt/LangtonsAnt -a -f ./.stack-work/dist/x86_64-*/Cabal-1.22.5.0/build/LangtonsAnt/LangtonsAnt ]; then
+    echo "\nyou have compiled this project with both cabal and stack, so I am not sure which executable I should run. \n\n please run either: \n\t rm -r dist \t\t If you wish to use Stack (Recommended) \n\t rm -r .stack-work \t If you wish to use Cabal"
+elif [ -f ./.stack-work/dist/x86_64-*/Cabal-1.22.5.0/build/LangtonsAnt/LangtonsAnt ]; then
+    ./.stack-work/dist/x86_64-*/Cabal-1.22.5.0/build/LangtonsAnt/LangtonsAnt "$@"
+elif [ -f ./dist/build/LangtonsAnt/LangtonsAnt ]; then
+    ./dist/build/LangtonsAnt/LangtonsAnt "$@"
+elif [ -f ./langtons_ant ]; then
+    ./langtons_ant "$@"
+else
+    echo "you need to compile your code before running this. Please read the INSTALL.md"
+fi

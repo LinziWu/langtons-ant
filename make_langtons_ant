@@ -1,0 +1,2 @@
+#!/bin/sh
+ghc -O3 -fforce-recomp -isrc src/Main.hs -o langtons_ant -Wall -odir "build/`uname -m`" -hidir "build/`uname -m`" -threaded
