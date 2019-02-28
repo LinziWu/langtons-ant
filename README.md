@@ -1,5 +1,3 @@
-# COMP1100/1130 Assignment 1: Langton's Ant
-
 ![](screenshots/langtonSquare/LLRR.gif)
 
 ## What is this?
