@@ -19,6 +19,7 @@ import Graphics.Gloss.Interface.Pure.Simulate
 import StudentSources.LangtonsHex as Hex
 import StudentSources.LangtonsAnt as Ant
 
+--jfdjflakjdlkfasdjfipdklsf
 -- Parsing command line arguments. If you're doing some adventurous
 -- extension you might need to look at this.
 data ArgFlag = Mode | Trans | FPS | Skip | Start | Simulations | Help
